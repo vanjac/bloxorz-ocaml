@@ -77,6 +77,20 @@ let level6 = {
     orient=Upright; pos=(0,6)
 }
 
+let level66 = {
+    board=[
+[Hole;Hole;Thin;Thin;Thin;Hole;Hole;];
+[Hole;Thin;Floor;Floor;Floor;Hole;Hole;];
+[Hole;Thin;Floor;Floor;Floor;Floor;Hole;];
+[Hole;Floor;Hole;Hole;Floor;Floor;Hole;];
+[Hole;Floor;Hole;Hole;Thin;Thin;Floor;];
+[Floor;Floor;Floor;Hole;Thin;Thin;Floor;];
+[Floor;Finish;Floor;Hole;Floor;Floor;Floor;];
+[Floor;Floor;Floor;Hole;Hole;Hole;Hole;];
+];
+    orient=Upright; pos=(4,2)
+}
+
 let level77 = {
     board=[
 [Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Floor;Floor;Floor;Hole;];
@@ -92,6 +106,27 @@ let level77 = {
 [Floor;Floor;Floor;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;];
 ];
     orient=Upright; pos=(5,9)
+}
+
+let level88 = {
+    board=[
+[Hole;Hole;Floor;Floor;Floor;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;];
+[Hole;Hole;Floor;Floor;Floor;Thin;Thin;Thin;Hole;Hole;Hole;Hole;Hole;Hole;];
+[Hole;Hole;Hole;Floor;Floor;Thin;Thin;Floor;Hole;Hole;Hole;Hole;Hole;Hole;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Floor;Hole;Hole;Hole;Hole;Hole;Hole;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Floor;Hole;Hole;Hole;Hole;Hole;Hole;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Floor;Hole;Hole;Hole;Hole;Hole;Hole;];
+[Floor;Floor;Floor;Hole;Hole;Hole;Floor;Floor;Floor;Hole;Hole;Thin;Thin;Hole;];
+[Floor;Finish;Floor;Floor;Floor;Floor;Floor;Floor;Thin;Thin;Floor;Floor;Floor;Hole;];
+[Floor;Floor;Floor;Hole;Hole;Hole;Hole;Floor;Thin;Hole;Thin;Floor;Floor;Hole;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Thin;Hole;Hole;Floor;Floor;Hole;Hole;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Thin;Hole;Hole;Floor;Thin;Floor;Floor;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Floor;Floor;Floor;Floor;Hole;Floor;Floor;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Floor;Thin;Thin;Hole;Hole;Floor;Floor;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Floor;Floor;Thin;Hole;Hole;Hole;Hole;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Thin;Floor;Floor;Hole;Hole;Hole;Hole;];
+];
+    orient=Upright; pos=(3,7)
 }
 
 (* Printing Functions *)
@@ -214,4 +249,4 @@ let rec game_loop levels level_num = match levels with
 let () =
     print_string "BLOXORZ\nPress Enter to start the game...\n";
     ignore (read_line ());
-    game_loop [level1;level3;level4;level6;level77] 1
+    game_loop [level1;level3;level4;level6;level66;level77;level88] 1
