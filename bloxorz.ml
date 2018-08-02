@@ -194,8 +194,7 @@ let rec game_loop levels level_num = match levels with
         | Lose -> game_loop levels level_num
         | Quit -> ())
 
-;;
-
-print_string "BLOXORZ\nPress Enter to start the game...\n";;
-read_line ();;
-game_loop [level1;level3;level4;level6] 1;;
+let () =
+    print_string "BLOXORZ\nPress Enter to start the game...\n";
+    ignore (read_line ());
+    game_loop [level1;level3;level4;level6] 1
