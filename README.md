@@ -1,6 +1,6 @@
 # bloxorz-ocaml
 
-OCaml implementation of [this classic](https://www.coolmathgames.com/0-bloxorz). Play the game by running `ocaml bloxorz.ml`. Type W/A/S/D and press enter to make a move.
+OCaml implementation of [this classic](https://www.coolmathgames.com/0-bloxorz). Play the game by running `ocaml bloxorz.ml`. Type W/A/S/D and press enter to make a move. Type q to quit.
 
 ## Building Levels
 
