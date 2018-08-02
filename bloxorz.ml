@@ -77,6 +77,23 @@ let level6 = {
     orient=Upright; pos=(0,6)
 }
 
+let level77 = {
+    board=[
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Floor;Floor;Floor;Hole;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Floor;Floor;Floor;Hole;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Floor;Floor;Floor;Hole;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Floor;Hole;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Thin;Thin;Hole;Hole;Hole;Floor;Floor;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Thin;Thin;Floor;Thin;Floor;Floor;Floor;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Floor;Floor;Floor;Hole;Thin;Thin;Floor;];
+[Hole;Hole;Hole;Hole;Hole;Hole;Floor;Floor;Floor;Hole;Floor;Floor;Hole;];
+[Floor;Floor;Floor;Hole;Hole;Hole;Hole;Floor;Hole;Hole;Floor;Floor;Hole;];
+[Floor;Finish;Floor;Floor;Floor;Floor;Floor;Floor;Floor;Floor;Thin;Floor;Hole;];
+[Floor;Floor;Floor;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;Hole;];
+];
+    orient=Upright; pos=(5,9)
+}
+
 (* Printing Functions *)
 
 let tile_to_string tile = match tile with
@@ -197,4 +214,4 @@ let rec game_loop levels level_num = match levels with
 let () =
     print_string "BLOXORZ\nPress Enter to start the game...\n";
     ignore (read_line ());
-    game_loop [level1;level3;level4;level6] 1
+    game_loop [level1;level3;level4;level6;level77] 1
